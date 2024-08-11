@@ -19,5 +19,5 @@ outputs = model(**{k: v.unsqueeze(0) for k, v in inputs.items()}, labels=labels)
 logits = outputs.logits
 predicted_class = logits.argmax().item()
 
-# STEP 5
+# STEP 5   
 print(predicted_class)
